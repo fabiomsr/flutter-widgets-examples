@@ -1,5 +1,6 @@
 # Widgets examples
 
+
 | Widget                       | Documentation                                                        | Example |
 |------------------------------|----------------------------------------------------------------------|---------|
 | **Animation and motion widgets** |                                                                      |         |
