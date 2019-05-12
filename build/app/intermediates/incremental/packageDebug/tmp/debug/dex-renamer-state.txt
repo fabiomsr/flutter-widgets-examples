@@ -1,4 +1,0 @@
-#Sat May 11 20:58:38 CEST 2019
-base.0=/Users/fabio/AndroidStudioProjects/sandia/flutter_widgets_examples/build/app/intermediates/transforms/dexMerger/debug/0
-path.0=classes.dex
-renamed.0=classes.dex
