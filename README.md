@@ -13,4 +13,4 @@
 [Doc_CustomPaint]:https://api.flutter.dev/flutter/widgets/CustomPaint-class.html
 
 [Source_AnimatedContainer]:/lib/animation_and_motion_widgets/animated_container.dart
-[Source_CustomPaint]:/lib/painting_and_effects/animated_container.dart
+[Source_CustomPaint]:/lib/painting_and_effects/custom_paint.dart
