@@ -70,4 +70,10 @@ class _PositionedTransitionExampleState
       ]),
     );
   }
+
+  @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
+  }
 }
