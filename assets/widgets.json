@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "name":"Animated Container",
+    "family":"Animations & Motion Widgets"
+  },
+  {
+    "id": 1,
+    "name":"Decorated Box Transition",
+    "family":"Animations & Motion Widgets"
+  },
+  {
+    "id": 2,
+    "name":"Positioned Transition",
+    "family":"Animations & Motion Widgets"
+  },
+  {
+    "id": 3,
+    "name":"Card",
+    "family":"Material"
+  },
+  {
+    "id": 4,
+    "name":"Drawer",
+    "family":"Material"
+  },
+  {
+    "id": 5,
+    "name":"Custom Tween",
+    "family":"Tween"
+  }
+]
