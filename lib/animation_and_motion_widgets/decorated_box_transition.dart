@@ -68,4 +68,11 @@ class _DecoratedBoxTransitionExampleState
           )),
     );
   }
+
+  @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
+  }
+
 }
