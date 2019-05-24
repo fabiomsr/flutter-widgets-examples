@@ -10,30 +10,39 @@ import 'package:flutter_widgets_examples/catalog/painting_and_effects/custom_pai
 import 'package:flutter_widgets_examples/catalog/painting_and_effects/transform.dart';
 import 'package:flutter_widgets_examples/catalog/tween/custom_tween.dart';
 
-class WidgetDemoDetailPage extends StatelessWidget {
-  final widgets = [
-    AnimatedContainerExample(),
-    DecoratedBoxTransitionExample(),
-    PositionedTransitionExample(),
-    CardExample(),
-    DrawerExample(),
-    RadioExample(),
-    CustomPaintExample(),
-    TransformExample(),
-    CustomTween()
-  ];
+class WidgetDemoDetailPage extends StatefulWidget {
 
   final WidgetItem item;
 
-  WidgetDemoDetailPage({this.item});
+  const WidgetDemoDetailPage({Key key, this.item}) : super(key: key);
+
+  @override
+  State<StatefulWidget> createState() => _WidgetDemoDetailPageState();
+}
+
+class _WidgetDemoDetailPageState extends State<WidgetDemoDetailPage> {
+
+
+  var widgets = [
+  AnimatedContainerExample(),
+  DecoratedBoxTransitionExample(),
+  PositionedTransitionExample(),
+  CardExample(),
+  DrawerExample(),
+  RadioExample(),
+  CustomPaintExample(),
+  TransformExample(),
+  CustomTween()
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(item.name),
+        title: Text(this.widget.item.name),
       ),
-      body: widgets[item.id],
+      body: widgets[this.widget.item.id],
     );
   }
+
 }
