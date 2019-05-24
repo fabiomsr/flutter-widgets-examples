@@ -1,24 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(RadioExampleApp());
-
-class RadioExampleApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'Radio',
-        theme: ThemeData(
-          primarySwatch: Colors.lightGreen,
-        ),
-        home: Scaffold(
-          body: RadioExample(),
-        )
-    );
-  }
-}
-
 class RadioExample extends StatefulWidget {
-
   const RadioExample({Key key}) : super(key: key);
 
   @override
@@ -26,7 +8,6 @@ class RadioExample extends StatefulWidget {
 }
 
 class RadioExampleState extends State<RadioExample> {
-
   int _index = 1;
   String _value = '';
 
@@ -43,20 +24,18 @@ class RadioExampleState extends State<RadioExample> {
       child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: _emotions
-              .map((item) =>
-              Radio(
-                groupValue: _index,
-                value: item.index,
-                onChanged: (val) {
-                  setState(() {
-                    _index = val;
-                    _value = item.value;
-                  });
-                  print("ITEM : $_index with VALUE : $_value");
-                },
-              ))
-              .toList()
-      ),
+              .map((item) => Radio(
+                    groupValue: _index,
+                    value: item.index,
+                    onChanged: (val) {
+                      setState(() {
+                        _index = val;
+                        _value = item.value;
+                      });
+                      print("ITEM : $_index with VALUE : $_value");
+                    },
+                  ))
+              .toList()),
     );
   }
 }

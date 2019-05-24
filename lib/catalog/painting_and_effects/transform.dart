@@ -1,20 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(TransformExampleApp());
-
-class TransformExampleApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Transform',
-      theme: ThemeData(
-        primarySwatch: Colors.lightGreen,
-      ),
-      home: TransformExample(),
-    );
-  }
-}
-
 class TransformExample extends StatefulWidget {
   TransformExample({Key key}) : super(key: key);
 
@@ -23,11 +8,9 @@ class TransformExample extends StatefulWidget {
 }
 
 class _TransformExampleState extends State<TransformExample> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: Center(
         child: Container(
           child: Column(
@@ -62,8 +45,7 @@ class _TransformExampleState extends State<TransformExample> {
                 child: Container(
                   decoration: BoxDecoration(
                       color: Colors.purple,
-                      borderRadius: BorderRadius.all(Radius.circular(100.0))
-                  ),
+                      borderRadius: BorderRadius.all(Radius.circular(100.0))),
                   height: 50.0,
                   width: 50.0,
                 ),
@@ -76,8 +58,7 @@ class _TransformExampleState extends State<TransformExample> {
                 child: Container(
                   decoration: BoxDecoration(
                       color: Colors.blue,
-                      borderRadius: BorderRadius.all(Radius.circular(10.0))
-                  ),
+                      borderRadius: BorderRadius.all(Radius.circular(10.0))),
                   height: 100.0,
                   width: 100.0,
                 ),

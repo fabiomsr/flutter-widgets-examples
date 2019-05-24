@@ -1,25 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:math' show sin, pi;
 
-void main() => runApp(CustomTweenApp());
-
-class CustomTweenApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Custom Tween',
-      theme: ThemeData(
-        primarySwatch: Colors.lightGreen,
-      ),
-      home: CustomTweenExample(title: 'Custom Tween'),
-    );
-  }
-}
-
 class CustomTweenExample extends StatefulWidget {
-  CustomTweenExample({Key key, this.title}) : super(key: key);
-
-  final String title;
+  CustomTweenExample({Key key}) : super(key: key);
 
   @override
   _CustomTweenExampleState createState() => _CustomTweenExampleState();
@@ -41,9 +24,6 @@ class _CustomTweenExampleState extends State<CustomTweenExample>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
       body: Container(
         alignment: Alignment.center,
         child:

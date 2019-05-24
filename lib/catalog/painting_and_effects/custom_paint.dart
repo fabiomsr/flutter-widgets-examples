@@ -1,21 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as Math;
 
-void main() => runApp(CustomPaint());
-
-class CustomPaintApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Custom Paint',
-      theme: ThemeData(
-        primarySwatch: Colors.lightGreen,
-      ),
-      home: CustomPaintExample(),
-    );
-  }
-}
-
 class CustomPaintExample extends StatefulWidget {
   CustomPaintExample({Key key}) : super(key: key);
 

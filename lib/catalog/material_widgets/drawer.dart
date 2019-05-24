@@ -1,16 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(DrawerExampleApp());
-
-class DrawerExampleApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: DrawerExample(),
-    );
-  }
-}
-
 class DrawerExample extends StatefulWidget {
   DrawerExample({Key key}) : super(key: key);
 
@@ -35,7 +24,6 @@ class _DrawerExampleState extends State<DrawerExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: backgroundColors[selectedItem],
-      appBar: AppBar(),
       body: Center(
         child: Text("Drawer Example"),
       ),

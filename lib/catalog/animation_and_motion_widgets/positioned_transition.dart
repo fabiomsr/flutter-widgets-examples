@@ -1,24 +1,7 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(PositionedTransitionApp());
-
-class PositionedTransitionApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Positioned Transition',
-      theme: ThemeData(
-        primarySwatch: Colors.lightGreen,
-      ),
-      home: PositionedTransitionExample(title: 'Positioned Transition'),
-    );
-  }
-}
-
 class PositionedTransitionExample extends StatefulWidget {
-  PositionedTransitionExample({Key key, this.title}) : super(key: key);
-
-  final String title;
+  PositionedTransitionExample({Key key}) : super(key: key);
 
   @override
   _PositionedTransitionExampleState createState() =>
@@ -57,9 +40,6 @@ class _PositionedTransitionExampleState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
       body: Stack(alignment: Alignment.center, children: <Widget>[
         PositionedTransition(
           rect: _animation,
