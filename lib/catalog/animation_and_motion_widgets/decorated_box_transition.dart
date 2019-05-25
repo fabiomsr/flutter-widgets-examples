@@ -1,24 +1,7 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(DecoratedBoxTransitionApp());
-
-class DecoratedBoxTransitionApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Decorated Box Transition',
-      theme: ThemeData(
-        primarySwatch: Colors.lightGreen,
-      ),
-      home: DecoratedBoxTransitionExample(title: 'Decorated Box Transition'),
-    );
-  }
-}
-
 class DecoratedBoxTransitionExample extends StatefulWidget {
-  DecoratedBoxTransitionExample({Key key, this.title}) : super(key: key);
-
-  final String title;
+  DecoratedBoxTransitionExample({Key key}) : super(key: key);
 
   @override
   _DecoratedBoxTransitionExampleState createState() =>
@@ -50,9 +33,6 @@ class _DecoratedBoxTransitionExampleState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
       body: Container(
           alignment: Alignment.center,
           child: DecoratedBoxTransition(
@@ -74,5 +54,4 @@ class _DecoratedBoxTransitionExampleState
     _animationController.dispose();
     super.dispose();
   }
-
 }

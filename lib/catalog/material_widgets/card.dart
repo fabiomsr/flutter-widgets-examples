@@ -1,20 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(CardExampleApp());
-
-class CardExampleApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Transform',
-      theme: ThemeData(
-        primarySwatch: Colors.lightGreen,
-      ),
-      home: CardExample(),
-    );
-  }
-}
-
 class CardExample extends StatefulWidget {
   CardExample({Key key}) : super(key: key);
 
@@ -26,7 +11,6 @@ class _CardExampleState extends State<CardExample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: Center(
         child: Container(
           child: Column(
